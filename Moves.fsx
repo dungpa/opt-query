@@ -1,4 +1,6 @@
-﻿type Command = Left | Right 
+﻿// Taken from http://stackoverflow.com/questions/14110532/extended-computation-expressions-without-for-in-do
+// for the purpose of exprimentating with new features
+type Command = Left | Right 
 type Commands = Commands of Command list
 
 type MovesBuilder() =

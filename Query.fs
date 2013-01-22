@@ -28,5 +28,3 @@ type OptQueryBuilder() =
     member __.Run (q: Quotations.Expr<_>) = q
 
 let opt = OptQueryBuilder()
-
-let assume = seq
