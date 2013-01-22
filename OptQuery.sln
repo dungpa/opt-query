@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OptQuery", "OptQuery.fsproj", "{ED222850-90D7-459A-8893-FD6CC01126B1}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OptQuery", "OptQuery\OptQuery.fsproj", "{ED222850-90D7-459A-8893-FD6CC01126B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
