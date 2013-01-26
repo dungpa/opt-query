@@ -6,8 +6,11 @@ open Microsoft.SolverFoundation.FSharpDSL.Compiler
     
 type Query<'T> = Query of (unit -> 'T)
 
-let var<[<Measure>] 'T>() = Query var<'T>
-let vararray1<[<Measure>] 'T>(n) = Query (fun () -> vararray1<'T>(Seq.empty))
+let private fail () = failwith "Not useable directly."
+
+let var<[<Measure>] 'T>(): Query<float<'T>> = fail()
+let vararray1<[<Measure>] 'T>(n): Query<float<'T>[]> = fail()
+let vararray2<[<Measure>] 'T> n1 n2: Query<float<'T>[,]> = fail()
 
 type OptQueryBuilder() = 
     member __.Bind (source: Query<'T>, body: 'T -> Query<'U>) = match source with Query f -> body (f())
